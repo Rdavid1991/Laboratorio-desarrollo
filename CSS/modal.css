@@ -1,0 +1,158 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe00;
+    margin:100px auto;
+    padding: 20px;
+    border: 1px solid rgba(136, 136, 136, 0);
+    width: 100px;
+}
+
+/* The Close Button */
+.pacman {
+  position: relative;
+  margin-bottom: 15px;
+}
+.pacman > div:nth-child(2) {
+  animation: balls 1s -0.99s infinite linear; 
+}
+.pacman > div:nth-child(3) {
+  animation: balls 1s -0.66s infinite linear; 
+}
+.pacman > div:nth-child(4) {
+  animation: balls 1s -0.33s infinite linear; 
+}
+.pacman > div:nth-child(5) {
+  animation: balls 1s 0s infinite linear; 
+}
+.pacman > div:nth-child(1) {
+  width: 0px;
+  height: 0px;
+  border: 80px solid rgb(243, 194, 34);
+  border-right: 80px solid transparent;
+  border-radius: 80px;
+  animation: rotate_pacman_half_up 0.5s 0s infinite;
+  position: relative;
+  left: -60px;
+}
+.pacman > div:nth-child(2) {
+  width: 0px;
+  height: 0px;
+  border: 80px solid rgb(243, 194, 34);
+  border-right: 80px solid transparent;
+  border-radius: 80px;
+  animation: rotate_pacman_half_down 0.5s 0s infinite;
+  margin-top: -160px;
+  position: relative;
+  left: -60px; 
+}
+.pacman > div:nth-child(3),
+.pacman > div:nth-child(4),
+.pacman > div:nth-child(5),
+.pacman > div:nth-child(6) {
+  background-color: rgb(243, 194, 34);
+  border-radius: 100%;
+  margin: 2px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 70px;
+  left: 200px;
+}
+
+@keyframes rotate_pacman_half_up {
+  0% { transform: rotate(270deg); }
+  50% { transform: rotate(360deg); }
+  100% { transform: rotate(270deg); } 
+}
+
+@keyframes rotate_pacman_half_down {
+  0% { transform: rotate(90deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(90deg); } 
+}
+
+@keyframes balls {
+  75% { opacity: 0.7; }
+  100% { transform: translate(-150px, 0); } 
+}
+
+/*Efecto de palabra*/
+
+.text {
+  display: inline-block;
+  width: 285px;
+  text-align: left;
+  height: 62px;
+  vertical-align: -2px;
+}
+
+.text > div {
+  text-transform: uppercase;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  margin: 0 auto;
+  color: #fff;
+  font-size:0px;
+  opacity: 0;
+  margin-top:-30px;
+  position:absolute;
+}
+
+.text > div:nth-child(1) {
+  animation: roll 5s linear infinite 0s;
+}
+.text > div:nth-child(2) {
+  animation: roll 5s linear infinite 1s;
+}
+.text > div:nth-child(3) {
+  animation: roll 5s linear infinite 2s;
+}
+.text > div:nth-child(4) {
+  animation: roll 5s linear infinite 3s;
+}
+
+@keyframes roll {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-top:-30px;
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-top:0px;
+  }
+  20% {
+    font-size:inherit;
+    opacity:1;
+    margin-top:0px;
+  }
+  27% {
+    font-size:0px;
+    opacity: 0.5;
+    margin-top:100px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    margin-top:-30px;
+  }
+}

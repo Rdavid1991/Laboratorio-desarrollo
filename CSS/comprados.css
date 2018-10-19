@@ -1,0 +1,29 @@
+div.titulocomp{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(171, 196, 241);
+    box-shadow: 1px 5px 5px rgb(0, 0, 0);
+    box-align: inherit;
+    border-radius: 15px;
+}
+
+div.comprados{
+      display: inline-block;
+    background-color: rgb(238, 215, 10);
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    box-shadow: 1px 5px 5px rgb(0, 0, 0);
+     margin: 0px 10px 10px 0px;
+    border-radius: 10px;
+}
+
+
+button.buttonPurched{
+    background-color:rgb(238, 215, 10);
+    pointer-events: none;
+}
+

@@ -1,0 +1,214 @@
+html{
+    box-sizing: border-box;  
+}
+*, *:before,*:after{
+    box-sizing: inherit;
+}
+
+html{
+    background-image: url(../img/323518-P9MHS8-840.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+}
+
+.info {
+    margin-left: 10px;
+    width: 160px;
+    position: absolute;
+    background-color: rgba(190, 190, 190, 0.144);
+    border-radius: 15px;
+}
+.info h1{
+    text-align: center;
+    color: #fff
+}
+
+.info p{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 14px;
+} 
+
+.green{
+    width: 50px;
+    height: 40px;
+    background-color: chartreuse;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.yellow{
+    width: 50px;
+    height: 40px;
+    background-color: yellow;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.gray{
+    width: 50px;
+    height: 40px;
+    background-color: gray;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.winColor{
+    width: 50px;
+    height: 40px;
+    background-color: red;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.colors{
+    margin-top: 50px;
+}
+
+.play{
+    margin-left: 10px;
+    margin-top:500px;
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    background-color: rgba(190, 190, 190, 0.144);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.play  button.buttonWin{
+    border-radius: 15px;
+    font-size:18px;
+    text-transform: uppercase;
+    margin: 10px; 
+    font-weight: bold;
+    outline:none;
+    cursor: pointer;
+}
+
+.restart{
+    margin-left: 10px;
+    margin-top:580px;
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    background-color: rgba(190, 190, 190, 0.144);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.restart button.buttonRestart{
+   border-radius: 15px;
+    font-size:18px;
+    text-transform: uppercase;
+    margin: 10px; 
+    font-weight: bold;
+    outline:none;
+    cursor: pointer;
+}
+
+div#mark{
+    margin: auto;
+    width: 1200px;
+    background-color: rgba(190, 190, 190, 0.144);
+    border-radius: 15px;
+}
+
+html *{
+    user-select: none;
+}
+
+/*Inicio de header*/
+header div.loteria{
+    background-color:rgb(171, 196, 241);
+    box-shadow: 1px 5px 5px rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+header div.loteria h1  {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*Fin de header*/
+
+/*Inicio de botones*/
+.sectionButton{
+    text-align: center;
+    
+}
+
+.buttons{
+    display: inline-block;
+    margin: 0 auto;
+    border: 5px solid rgb(171, 196, 241);
+    border-radius: 10px;
+    box-shadow:3px 5px 8px rgb(0, 0, 0);
+    background-color: #ffffffa1;
+}
+
+.buttons  td{
+   padding:5px;
+   width: 10px;
+   text-align: center;
+}
+
+.buttons button{
+   cursor: pointer;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 24px;
+   box-shadow: 1px 5px 5px #999;
+   border-radius: 10px;
+   outline: none;
+   width: 60px;
+   height: 50px;
+}
+
+.buttons button:hover {
+   text-align: left;
+   background-color:rgb(171, 196, 241);
+   border-radius: 15px;
+}
+
+/*Prueba seleccionados*/
+button.sel {
+    background-color: rgb(10, 238, 21);
+    outline: none;
+    pointer-events: none;
+}
+
+.winButton{
+    background-color: rgb(238, 10, 10);
+    outline: none;
+    pointer-events: none;
+}
+
+.win{
+    display: inline-block;
+    background-color: rgb(238, 10, 10);
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    box-shadow: 1px 5px 5px #999;
+    margin: 0px 10px 10px 0px;
+    border-radius: 10px;
+}
+/*Prueba seleccionados*/
+
+/*Fin botones*/
+
+button[class='55 number'] , button[class='22 number'], button[class='75 number'],
+button[class='82 number'],button[class='94 number'],button[class='33 number'] {
+    background-color: rgb(87, 87, 87);
+    pointer-events: none;
+}
+
+section.costo div{
+    display: inline-block;
+}
+

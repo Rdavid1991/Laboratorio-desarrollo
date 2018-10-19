@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loteria</title>
+
+    <link rel="stylesheet" href="CSS/comprados.css">
+    <link rel="stylesheet" href="CSS/seleccion.css">
+    <link rel="stylesheet" href="CSS/loteria.css">
+    <link rel="stylesheet" href="CSS/modal.css">
+
+</head>
+
+<body>
+    <div class="info">
+        <H1 class="colors">Colores</H1>
+        <div class="green"></div>
+        <p>Seleccionado</p>
+        <div class="yellow"></div>
+        <p>Comprados por ti</p>
+        <div class="gray"></div>
+        <p>Comprados por otro usuario</p>
+        <div class="winColor"></div>
+        <p>Ganador</p>
+    </div>
+    <div class='play'>
+        <button class="buttonWin initGame">Sorteo</button>
+    </div>
+
+    <div class='restart'>
+        <button class="buttonRestart">reiniciar</button>
+    </div>
+    <div id="mark">
+        
+        <header>
+            <div class="loteria">
+                <h1>Selecciona tu numero</h1>
+            </div>
+        </header>
+        <main>
+
+            <section class="sectionButton"  >
+                <div id='padre' class='buttons'>
+                    <!--Botones-->
+                </div>
+            </section>
+
+            <section id="seleccion">
+                <!--seleccion-->
+                <div class="titulo">
+                    <h1>Numeros Seleccionados</h1>
+                </div>
+
+                <div class="selecc" id="selecc">
+                    <!--Selecciones-->
+                </div>
+
+                <div>
+                    <button class="buttonBuy initGame">Comprar</button>
+                   
+                    <a class="terms" href="">Acepta los terminos y condiciones/Mayor de edad?</a>
+                    <input type="checkbox" class="check initGame">
+                    <span class="checkmark"></span>
+                    <section class="costo">
+                        <div class="costo"></div>
+                    </section>
+                </div>
+            </section>
+
+
+            <section>
+                <!--Comprados-->
+                <div class="titulocomp">
+                    <h1>Numeros Comprados</h1>
+                </div>
+                <div class="isPurched">
+                    <!--Todos lso comprados-->
+                </div>
+            </section>
+            <section>
+                <!--Checkbox y selecciones-->
+            </section>
+        </main>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+
+            <div class="modal-content">
+                <!--
+                <h1>
+                    <div class="text">
+                        <div>Procesando</div>
+                        <div>Procesando</div>
+                        <div>Procesando</div>
+                        <div>Procesando</div>
+                        <div>Procesando</div>
+                    </div>
+                </h1>
+                -->
+
+                <div class="pacman">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="JavaScript/index.js"></script>
+<script>
+    (function (init, htmlElements) {
+        init();
+    })(window.App.init, window.App.htmlElements);
+</script>
+
+</html>
